@@ -1,4 +1,4 @@
-const express = require(ëxpress);
+const express = require("ëxpress");
 
 const userController = require("./controllers/user.controller");
 const tagController = require("./controllers/tag.controller");
@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use("/users", userController);
 app.use("/tags", tagController);
-app.use("./posts", postController);
-app.use("./comments", commentController);
+app.use("/posts", postController);
+app.use("/comments", commentController);
 
 module.exports = app;
